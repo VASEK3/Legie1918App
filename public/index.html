@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101a1b">
+  <meta name="description" content="LEGIE 1918 — interaktivní výprava za československými legionáři. 30 otázek, 3D uniformy, historická časová osa a rozhovor s virtuálním legionářem.">
+  <meta property="og:title" content="LEGIE 1918 — Příběh vzniku republiky">
+  <meta property="og:description" content="Poznej cestu legií z Ruska, Francie a Itálie. Interaktivní muzeum v kapse.">
+  <meta property="og:image" content="/assets/cover.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>LEGIE 1918 — Interaktivní muzeum</title>
+</head>
+<body>
+ <div class="app-shell">
+  <header class="topbar">
+    <button class="brand" data-go="home" aria-label="LEGIE 1918 – domů"><span class="brand-mark">✦</span><span>LEGIE <em>1918</em><small>HISTORIE, KTERÁ OŽÍVÁ</small></span></button>
+    <nav class="desktop-nav" aria-label="Hlavní navigace">
+      <button data-go="home" class="nav-item is-active">Úvod</button>
+      <button data-go="timeline" class="nav-item">Cesta časem</button>
+      <button data-go="quiz" class="nav-item">Kvíz 30</button>
+      <button data-go="uniforms" class="nav-item">3D atelier</button>
+      <button data-go="chat" class="nav-item">Legionář AI</button>
+      <button data-go="sources" class="nav-item">Prameny</button>
+    </nav>
+    <button class="topbar-action" data-go="quiz"><span class="topbar-dot"></span> Začít misi <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="main" tabindex="-1">
+   <section class="page page-home" data-page="home">
+    <div class="hero">
+     <div class="hero-left">
+      <div class="eyebrow"><span class="red-dot"></span> INTERAKTIVNÍ HISTORICKÁ EXPEDICE <span class="eyebrow-line"></span> 1914 — 1920</div>
+      <h1>Svoboda<br>nebyla <span class="script">zadarmo.</span></h1>
+      <p class="hero-lede">Vydej se po stopách československých legionářů. Od zákopů u Zborova přes sibiřskou magistrálu až ke dni, kdy se zrodila republika.</p>
+      <div class="hero-actions"><button class="btn btn-gold" data-go="timeline">Prozkoumat příběh <span>↗</span></button><button class="btn btn-outline" data-go="chat"><span class="play-triangle">▶</span> Promluvit s legionářem</button></div>
+      <div class="hero-meta"><span><b>03</b> bojiště</span><i></i><span><b>30</b> výzev</span><i></i><span><b>1918</b> zrod státu</span></div>
+     </div>
+     <div class="hero-art">
+       <img src="/assets/hero.svg" alt="Autorská ilustrace legionářského vlaku na zasněžené Transsibiřské magistrále" loading="eager">
+       <div class="hero-frame-lines" aria-hidden="true"></div>
+       <div class="art-label"><span class="art-label-key">01 / 03</span><div><b>RUSKO · 1918</b><small>Napříč Sibiří k samostatnosti</small></div><span class="art-cross">✦</span></div>
+       <div class="art-year">1918</div>
+     </div>
+    </div>
+    <div class="ribbon" aria-label="Témata výpravy"><div><span>✳</span> ZBOROV 1917</div><div><span>✳</span> BACHMAČ 1918</div><div><span>✳</span> DOSS ALTO 1918</div><div><span>✳</span> 28. ŘÍJEN 1918</div></div>
+    <section class="home-section">
+      <div class="section-header"><div><p class="kicker">TŘI FRONTY. JEDNA MYŠLENKA.</p><h2>Za hranicemi monarchie</h2></div><p>Československé jednotky vznikaly ve třech odlišných podmínkách. Každá cesta vedla k téže naději.</p></div>
+      <div class="front-cards">
+       <button class="front-card front-russia" data-front="rusko"><span class="front-no">01 / VÝCHODNÍ FRONTA</span><span class="front-graphic">✳</span><span class="front-bottom"><span><strong>Rusko</strong><small>Česká družina · Zborov · Sibiř</small></span><span class="circle-arrow">↗</span></span></button>
+       <button class="front-card front-france" data-front="francie"><span class="front-no">02 / ZÁPADNÍ FRONTA</span><span class="front-graphic">✦</span><span class="front-bottom"><span><strong>Francie</strong><small>Rota Nazdar · Arras · Darney</small></span><span class="circle-arrow">↗</span></span></button>
+       <button class="front-card front-italy" data-front="italie"><span class="front-no">03 / ITALSKÁ FRONTA</span><span class="front-graphic">✳</span><span class="front-bottom"><span><strong>Itálie</strong><small>Piava · Doss Alto · 1918</small></span><span class="circle-arrow">↗</span></span></button>
+      </div>
+    </section>
+    <section class="experience-section">
+     <div class="experience-copy"><p class="kicker">HISTORIE, KTEROU NEJEN ČTEŠ</p><h2>Vstup do roku <i>1918.</i></h2><p>Prohlédni si trojrozměrné rekonstrukce stejnokrojů, vyzkoušej historický kvíz nebo polož otázku virtuálnímu legionáři.</p><button class="text-link" data-go="uniforms">Objevit 3D atelier <span>↗</span></button></div>
+     <div class="experience-grid"><button data-go="quiz" class="experience-tile"><span class="tile-icon">◎</span><b>30 otázek</b><small>Otestuj své znalosti</small><span class="tile-arrow">↗</span></button><button data-go="uniforms" class="experience-tile"><span class="tile-icon">⬡</span><b>3D uniformy</b><small>Otoč, přibliž, objev detaily</small><span class="tile-arrow">↗</span></button><button data-go="chat" class="experience-tile"><span class="tile-icon">◉</span><b>AI legionář</b><small>Ptej se textem nebo hlasem</small><span class="tile-arrow">↗</span></button><button data-go="timeline" class="experience-tile"><span class="tile-icon">↗</span><b>Časová osa</b><small>Od 1914 až po návrat</small><span class="tile-arrow">↗</span></button></div>
+    </section>
+   </section>
+
+   <section class="page page-timeline" data-page="timeline" hidden>
+    <div class="page-intro"><span class="kicker">ARCHIV / CESTA ČASEM</span><h1>Každý rok<br><i>psal dějiny.</i></h1><p>Vyber událost a odhal souvislosti na cestě ke vzniku Československa.</p></div>
+    <div class="timeline-layout"><aside class="timeline-index"><div class="side-label">HISTORICKÉ MILNÍKY <span id="event-count">01 / 09</span></div><div id="event-buttons" class="event-buttons"></div></aside><article id="event-detail" class="event-detail" aria-live="polite"></article></div>
+    <p class="page-footnote">Časová osa přibližuje vybrané události, nikoliv úplný průběh první světové války. Odkazy na odborné podklady najdeš u každé události.</p>
+   </section>
+
+   <section class="page page-quiz" data-page="quiz" hidden>
+    <div class="page-intro compact"><span class="kicker">ZNALOSTNÍ VÝZVA / 30 OTÁZEK</span><h1>Znáš svůj <i>příběh?</i></h1><p>30 pečlivě vybraných otázek, tři úrovně, vysvětlení a ověřitelné prameny.</p></div>
+    <div class="quiz-grid"><div class="quiz-main"><div class="quiz-top"><span id="quiz-level" class="level-pill">01 / POČÁTKY</span><span id="quiz-counter">OTÁZKA 01 / 30</span></div><div class="progress-track"><div id="quiz-progress" class="progress-fill"></div></div><div id="quiz-body" aria-live="polite"></div></div><aside class="quiz-aside"><div class="aside-deco">✦</div><p class="kicker">TVŮJ ZÁPISNÍK</p><div class="score-big" id="score-big">00<span>/30</span></div><p>Správných odpovědí</p><div class="mini-stats"><div><span id="quiz-streak">0</span><small>Aktuální série</small></div><div><span id="quiz-best">—</span><small>Nejlepší výsledek</small></div></div><div class="aside-rule"></div><p class="aside-tip" id="quiz-tip">Na každou otázku odpověz jednou. Po odpovědi uvidíš vysvětlení a zdroj.</p><button id="quiz-restart" class="btn btn-soft">Začít znovu ↺</button></aside></div>
+   </section>
+
+   <section class="page page-uniforms" data-page="uniforms" hidden>
+    <div class="page-intro compact"><span class="kicker">VIRTUÁLNÍ EXPONÁTY / 3D ATELIER</span><h1>Výstroj <i>odvahy.</i></h1><p>Interaktivní prostorové modely inspirované stejnokroji legií. Otoč je prstem, myší nebo tlačítky.</p></div>
+    <div class="museum-layout"><div class="museum-view"><div class="museum-topline"><span><span class="live-dot"></span> INTERAKTIVNÍ 3D REKONSTRUKCE</span><span id="uniform-ordinal">01 / 03</span></div><div class="canvas-wrap"><canvas id="uniform-canvas" aria-label="Otočný trojrozměrný model legionářské uniformy" role="img"></canvas><div class="canvas-glow"></div><div class="canvas-caption"><span>360°</span><small>TAHEM OTÁČEJ · TLAČÍTKY PŘIBLIŽUJ</small></div><p id="webgl-fallback" hidden>Na tomto zařízení není WebGL dostupné. Popis uniformy a odborné odkazy jsou vpravo.</p></div><div class="museum-controls"><div class="control-group"><button id="turn-left" aria-label="Otočit doleva">↶</button><button id="turn-right" aria-label="Otočit doprava">↷</button></div><div class="control-group"><button id="zoom-out" aria-label="Oddálit">−</button><button id="zoom-in" aria-label="Přiblížit">+</button><button id="reset-camera" aria-label="Obnovit zobrazení">⌖</button></div></div></div><aside class="museum-info"><div class="uniform-tabs" role="tablist" aria-label="Výběr uniformy"><button class="uniform-tab active" data-uniform="rusko" role="tab" aria-selected="true">Rusko</button><button class="uniform-tab" data-uniform="francie" role="tab" aria-selected="false">Francie</button><button class="uniform-tab" data-uniform="italie" role="tab" aria-selected="false">Itálie</button></div><div id="uniform-info"></div><div class="info-divider"></div><span class="kicker">DETAILY MODELU</span><div id="uniform-parts" class="uniform-parts"></div><p class="model-disclaimer">Modely jsou autorské, výukově zjednodušené 3D ilustrace. Nevydávají se za přesné digitalizace konkrétních dochovaných stejnokrojů; jejich podoby se lišily podle jednotek a období.</p></aside></div>
+   </section>
+
+   <section class="page page-chat" data-page="chat" hidden>
+    <div class="page-intro compact"><span class="kicker">ŽIVÁ HISTORIE / VIRTUÁLNÍ ROZHOVOR</span><h1>Zeptej se <i>legionáře.</i></h1><p>Ptej se na život na frontě i vznik republiky. Odpovědi porovnávej s historickými prameny.</p></div>
+    <div class="chat-layout"><section class="chat-panel" aria-label="Chat s virtuálním legionářem"><div class="chat-header"><div class="avatar">F</div><div class="chat-contact"><strong>František <span>· virtuální průvodce</span></strong><small><span class="online-dot"></span><span id="chat-mode-label">Ověřený průvodce · lokální odpovědi</span></small></div><button class="chat-settings-btn" id="chat-settings" title="Nastavení AI chatu" aria-label="Nastavení AI chatu">⚙</button></div><div class="chat-notice">Fiktivní postava, nikoli skutečné svědectví. AI odpovědi se mohou mýlit. <button data-go="sources">Ověřit prameny ↗</button></div><div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-relevant="additions text"></div><div class="chat-bottom"><div id="suggestions" class="suggestions"><button data-question="Jak probíhala bitva u Zborova?">Bitva u Zborova</button><button data-question="Co se stalo na sibiřské magistrále?">Sibiřská magistrála</button><button data-question="Jaké byly uniformy?">Výstroj a uniformy</button></div><form id="chat-form" class="composer"><button type="button" id="voice-button" class="mic-button" title="Mluvit do mikrofonu" aria-label="Nadiktovat otázku">♩</button><input id="chat-input" placeholder="Na co by ses legionáře zeptal?" aria-label="Zpráva legionáři" maxlength="700" autocomplete="off" required><button type="submit" class="send-button" aria-label="Odeslat">↗</button></form><div class="composer-bottom"><span id="voice-hint">Hlasový vstup závisí na prohlížeči.</span><label class="speak-switch"><input type="checkbox" id="speak-toggle" checked> <span>🔊</span> Přečíst odpovědi</label></div></div></section><aside class="chat-sidebar"><div class="chat-poster"><div class="poster-badge">POLNÍ ZÁPISNÍK</div><div class="poster-emblem">✧</div><strong>Každá otázka<br>otevírá historii.</strong><small>1914 · 1918 · 1920</small></div><div class="chat-info"><span class="kicker">JAK TO FUNGUJE</span><p><b>Bez API klíče:</b> odpovídá ověřený lokální průvodce na předem připravená témata.</p><p><b>S API klíčem:</b> aktivuje se konverzační AI přes zabezpečenou Netlify Function.</p><p><b>Hlas:</b> telefon převádí řeč na text a odpověď přečte hlasem dostupným v systému.</p></div></aside></div>
+   </section>
+
+   <section class="page page-sources" data-page="sources" hidden>
+    <div class="page-intro compact"><span class="kicker">OVĚŘITELNÁ HISTORIE / PRAMENY</span><h1>Za každým faktem<br><i>je zdroj.</i></h1><p>Základ projektu tvoří veřejně dostupné odborné instituce. Každá otázka v kvízu a důležitá událost na časové ose uvádí svůj zdroj.</p></div>
+    <div class="source-top"><div class="source-highlight"><span>01</span><h2>Historie není fikce.</h2><p>Časovou osu, data bitev a podobu stejnokrojů opíráme o publikované historické podklady. Virtuální legionář je výuková simulace, ne nahrávka ani přepis skutečného pamětníka.</p></div><div class="source-commitments"><div><span>✓</span> U každého kvízového faktu zdroj</div><div><span>✓</span> Jasně označená rekonstrukce 3D</div><div><span>✓</span> Oddělení historických faktů a AI</div><div><span>✓</span> Možnost studovat originální prameny</div></div></div>
+    <div class="source-list" id="source-list"></div><p class="page-footnote">Odkazy vedou na stránky třetích stran. Projekt je neoficiální výuková aplikace, nikoli web státní instituce. Citace a obsah ověřeny při přípravě 18. 11. 2026.</p>
+   </section>
+  </main>
+  <footer class="site-footer"><div><b>LEGIE <em>1918</em></b><span>Interaktivní muzeum v kapse.</span></div><div><span>Autorský vzdělávací projekt · 2026</span><button data-go="sources">Prameny a metodika ↗</button></div></footer>
+ </div>
+ <nav class="mobile-nav" aria-label="Mobilní navigace"><button data-go="home" class="is-active"><span>⌂</span><small>Úvod</small></button><button data-go="timeline"><span>◷</span><small>Čas</small></button><button data-go="quiz"><span>◎</span><small>Kvíz</small></button><button data-go="uniforms"><span>⬡</span><small>3D</small></button><button data-go="chat"><span>◉</span><small>Chat</small></button><button data-go="sources"><span>≡</span><small>Prameny</small></button></nav>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <dialog id="settings-dialog" class="settings-dialog"><form method="dialog" id="settings-form"><div class="modal-head"><span class="kicker">NASTAVENÍ ROZHOVORU</span><button type="submit" class="modal-close" aria-label="Zavřít">×</button></div><h3>Režim AI průvodce</h3><p>Konverzační AI funguje po nasazení Netlify Function a nastavení <code>OPENAI_API_KEY</code> na serveru. Volitelný přístupový kód chrání veřejné použití, pokud jej správce nastaví.</p><label for="access-code">Přístupový kód (pokud ho provozovatel vyžaduje)</label><input id="access-code" type="password" placeholder="Volitelné" autocomplete="off"><button class="btn btn-gold" id="save-code" type="button">Uložit pro tuto relaci</button><small>API klíč OpenAI nikdy nevkládej sem ani do veřejného webu.</small></form></dialog>
+ <script src="/data.js" defer></script>
+ <script src="/webgl.js" defer></script>
+ <script src="/app.js" defer></script>
+</body>
+</html>

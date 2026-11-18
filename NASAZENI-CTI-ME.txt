@@ -1,0 +1,13 @@
+LEGIE 1918 — JAK APLIKACI ZVEŘEJNIT NA NETLIFY
+
+1. Pouze rychlá ukázka (bez generativního AI): rozbal soubor legie1918-netlify-drop.zip; obsah rozbalené složky nahraj do https://app.netlify.com/drop. Funguje kvíz, 3D, časová osa a místní průvodce.
+
+2. Plná verze s AI: rozbal legie1918-netlify-projekt.zip a vlož obsah projektu do GitHub repozitáře. Na https://app.netlify.com/import vyber repozitář; soubor netlify.toml automaticky nastavuje publish složku public a serverovou funkci.
+
+3. V Netlify přidej environment variable OPENAI_API_KEY do projektu (scope Functions). Volitelně CHAT_ACCESS_CODE a OPENAI_MODEL. Pak proveď znovu deploy.
+
+4. Zobraz web na Androidu nebo iOS a přes menu prohlížeče zvol Přidat na domovskou obrazovku.
+
+POZOR: Klíč API nevkládej do veřejných souborů ani do chatového okna! Plnohodnotné rozpoznávání řeči závisí na podpoře mobilního prohlížeče. Tři WebGL uniformy jsou stylizované rekonstrukce, ne historické 3D skeny.
+
+Odborné zdroje jsou přehledně uvedeny v aplikaci a v souboru public/data.js.
