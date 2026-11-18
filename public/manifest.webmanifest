@@ -1,0 +1,15 @@
+{
+  "name": "LEGIE 1918 – Interaktivní muzeum",
+  "short_name": "LEGIE 1918",
+  "description": "Cesta československých legionářů ke vzniku republiky.",
+  "lang": "cs-CZ",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101a1b",
+  "theme_color": "#101a1b",
+  "icons": [
+    {"src":"/assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"/assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
